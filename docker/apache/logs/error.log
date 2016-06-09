@@ -1,0 +1,54 @@
+[Thu Jun 09 17:26:06.271378 2016] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.11 configured -- resuming normal operations
+[Thu Jun 09 17:26:06.271423 2016] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 09 17:27:34.330892 2016] [:error] [pid 9] [client 172.17.0.4:41361] PHP Parse error:  syntax error, unexpected 'http' (T_STRING), expecting ',' or ';' in /app/index.php on line 2
+[Thu Jun 09 17:28:55.002723 2016] [:error] [pid 11] [client 172.17.0.4:41372] PHP Parse error:  syntax error, unexpected 'http' (T_STRING), expecting ',' or ';' in /app/index.php on line 2
+[Thu Jun 09 17:32:57.094338 2016] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+[Thu Jun 09 17:33:03.974323 2016] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.11 configured -- resuming normal operations
+[Thu Jun 09 17:33:03.974394 2016] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 09 17:45:34.026146 2016] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.7 (Ubuntu) PHP/5.5.9-1ubuntu4.11 configured -- resuming normal operations
+[Thu Jun 09 17:45:34.026191 2016] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Jun 09 17:50:58.931258 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Notice:  Undefined index: DB_HOST in /app/db.php on line 2
+[Thu Jun 09 17:50:58.931309 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Notice:  Undefined index: DB_PASSWORD in /app/db.php on line 4
+[Thu Jun 09 17:50:58.931451 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 7
+[Thu Jun 09 17:50:58.931504 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_select_db(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 8
+[Thu Jun 09 17:50:58.931524 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_select_db(): A link to the server could not be established in /app/db.php on line 8
+[Thu Jun 09 17:50:58.931556 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 11
+[Thu Jun 09 17:50:58.931567 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_query(): A link to the server could not be established in /app/db.php on line 11
+[Thu Jun 09 17:50:58.931586 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /app/db.php on line 15
+[Thu Jun 09 17:50:58.931604 2016] [:error] [pid 11] [client 172.17.0.4:41555] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /app/db.php on line 21
+[Thu Jun 09 17:52:31.571214 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Notice:  Undefined index: MYSQL_ROOT_PASSWORD in /app/db.php on line 4
+[Thu Jun 09 17:52:31.572745 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 17:52:31.573168 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_select_db(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 8
+[Thu Jun 09 17:52:31.573189 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_select_db(): A link to the server could not be established in /app/db.php on line 8
+[Thu Jun 09 17:52:31.573229 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 11
+[Thu Jun 09 17:52:31.573240 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_query(): A link to the server could not be established in /app/db.php on line 11
+[Thu Jun 09 17:52:31.573261 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /app/db.php on line 15
+[Thu Jun 09 17:52:31.573298 2016] [:error] [pid 12] [client 172.17.0.4:41566] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /app/db.php on line 21
+[Thu Jun 09 17:52:33.990860 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Notice:  Undefined index: MYSQL_ROOT_PASSWORD in /app/db.php on line 4
+[Thu Jun 09 17:52:33.992549 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 17:52:33.992663 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_select_db(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 8
+[Thu Jun 09 17:52:33.992691 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_select_db(): A link to the server could not be established in /app/db.php on line 8
+[Thu Jun 09 17:52:33.992738 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 11
+[Thu Jun 09 17:52:33.992763 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_query(): A link to the server could not be established in /app/db.php on line 11
+[Thu Jun 09 17:52:33.992788 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /app/db.php on line 15
+[Thu Jun 09 17:52:33.992816 2016] [:error] [pid 13] [client 172.17.0.4:41568] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /app/db.php on line 21
+[Thu Jun 09 17:52:42.987854 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Notice:  Undefined index: MYSQL_ROOT_PASSWORD in /app/db.php on line 4
+[Thu Jun 09 17:52:42.989515 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 17:52:42.989609 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_select_db(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 8
+[Thu Jun 09 17:52:42.989623 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_select_db(): A link to the server could not be established in /app/db.php on line 8
+[Thu Jun 09 17:52:42.989656 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 11
+[Thu Jun 09 17:52:42.989667 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_query(): A link to the server could not be established in /app/db.php on line 11
+[Thu Jun 09 17:52:42.989688 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /app/db.php on line 15
+[Thu Jun 09 17:52:42.989709 2016] [:error] [pid 9] [client 172.17.0.4:41573] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /app/db.php on line 21
+[Thu Jun 09 17:53:26.774103 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 17:53:26.774223 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_select_db(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 8
+[Thu Jun 09 17:53:26.774240 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_select_db(): A link to the server could not be established in /app/db.php on line 8
+[Thu Jun 09 17:53:26.774276 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) in /app/db.php on line 11
+[Thu Jun 09 17:53:26.774310 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_query(): A link to the server could not be established in /app/db.php on line 11
+[Thu Jun 09 17:53:26.774324 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, boolean given in /app/db.php on line 15
+[Thu Jun 09 17:53:26.774344 2016] [:error] [pid 10] [client 172.17.0.4:41579] PHP Warning:  mysql_close(): no MySQL-Link resource supplied in /app/db.php on line 21
+[Thu Jun 09 17:56:14.516199 2016] [:error] [pid 11] [client 172.17.0.4:41605] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 17:56:27.231260 2016] [:error] [pid 12] [client 172.17.0.4:41607] PHP Warning:  mysql_connect(): Access denied for user 'root'@'172.17.0.3' (using password: NO) in /app/db.php on line 7
+[Thu Jun 09 18:07:12.436473 2016] [:error] [pid 9] [client 172.17.0.4:41701] PHP Parse error:  syntax error, unexpected '<' in /app/db.php on line 13
+[Thu Jun 09 18:07:14.455944 2016] [:error] [pid 10] [client 172.17.0.4:41702] PHP Parse error:  syntax error, unexpected '<' in /app/db.php on line 13
+[Thu Jun 09 18:07:33.658032 2016] [:error] [pid 11] [client 172.17.0.4:41706] PHP Parse error:  syntax error, unexpected '<' in /app/db.php on line 13
