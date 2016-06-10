@@ -9,8 +9,7 @@
   access mysql table data by http://server_address/db.php  
 
 2. Extract values from CSV
-  ssss
-  sssss
+  cd csv && ./script.sh
 
 3. AngularJS
   ddf
