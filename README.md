@@ -11,6 +11,5 @@
 2. Extract values from CSV  
   cd csv && ./script.sh
 
-3. AngularJS
-  ddf
-  xfvg
+3. AngularJS  
+  open parse_url.html in browser
