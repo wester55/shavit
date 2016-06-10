@@ -8,7 +8,7 @@
   access phpinfo by http://server_address  
   access mysql table data by http://server_address/db.php  
 
-2. Extract values from CSV
+2. Extract values from CSV  
   cd csv && ./script.sh
 
 3. AngularJS
