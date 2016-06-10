@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<script src="https://code.angularjs.org/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+
+<ul>
+  <li ng-repeat="(key, value) in myData | groupBy: 'Country'">
+    Country: {{ key }}
+    <ul>
+      <li ng-repeat="customer in value">
+        customer: {{ customer.Name }}
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<script>
+var app = angular.module('myApp', ['angular.filter']);
+app.controller('customersCtrl', function($scope, $http) {
+  $http.get("http://www.w3schools.com/angular/customers.php").then(function (response) {
+      $scope.myData = response.data.records;
+  });
+});
+</script>
+
+</body>
+</html>
